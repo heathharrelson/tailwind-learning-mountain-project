@@ -10,59 +10,40 @@
 </head>
 
 <body class="antialiased">
-  <nav
-    class="bg-mp-800 overflow-scroll px-5 lg:px-10 p-2 text-sm text-white text-opacity-75 leading-relaxed font-hairline uppercase">
-    <ul class="flex flex-no-wrap">
-      <li class="flex-shrink-0"><a href="#">Shop REI</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">REI Outlet</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">Used Gear</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">REI Adventures</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">Classes &amp; Events</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">Expert Advice</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">Co-op Journal</a></li>
-      <li class="flex-shrink-0 ml-4"><a href="#">Conversations</a></li>
-    </ul>
-  </nav>
-  <div class="py-2 lg:px-64 bg-mp-100 shadow-inner text-center text-sm font-thin">
-    <div class="max-w-2xl mx-auto">
-      <strong class="font-bold">COVID-19</strong>: At REI, we encourage you to get outside responsibly. Stay local,
-      avoid recreational travel, practice social distancing and check ahead for area and facility closures. <a href="#"
-        class="underline">Learn More</a>
-    </div>
-  </div>
-  <header class="flex justify-between items-center px-4 py-3 border-b border-gray-200">
+  <header class="flex justify-between items-center bg-black px-4 py-3 text-white">
     <div class="flex justify-start">
       <div class="pr-4">
-        <img class="w-56" src="https://cdn.apstatic.com/img/climb/logoTitle.svg">
+        <img class="h-11" src="https://mountainproject.com/img/climb/logoHex2.svg">
       </div>
-      <div class="hidden bs-lg:block border-l border-gray-400 pl-4">
-        <img class="w-14" src="https://cdn.apstatic.com/img/REILogoBlack.png" alt="REI Logo">
-      </div>
-      <ul class="hidden bs-lg:flex ml-10 text-sm leading-10">
-        <li class="mr-3"><a href="#" class="hover:underline">Routes</a></li>
+      <ul class="hidden bs-lg:flex ml-2 text-sm leading-10">
+        <li class="mr-3"><a href="#" class="hover:underline">Route Guide</a></li>
         <li class="mr-3"><a href="#" class="hover:underline">Gyms</a></li>
         <li class="mr-3"><a href="#" class="hover:underline">What's New</a></li>
         <li class="mr-3"><a href="#" class="hover:underline">Partners</a></li>
-        <li><a href="#" class="hover:underline">Forum</a></li>
+        <li class="mr-3"><a href="#" class="hover:underline">Forum</a></li>
+        <li><a href="#">
+            <img src="https://mountainproject.com/img/apple.png" alt="Apple Icon" class="inline-block h-4">
+            <img src="https://mountainproject.com/img/android.png" alt="Android Icon" class="inline-block ml-1 h-4">
+          </a></li>
       </ul>
     </div>
     <div class="flex items-center justify-end">
-      <div class="hidden md:block w-56 mr-4 pl-3 pr-1 py-1 border border-black">
-        <input type="search" placeholder="Search routes, forums, etc" class="w-full text-sm placeholder-gray-700"
-          style="background: #fff url('/images/search.png') 98% 50%/20px 20px no-repeat">
+      <div class="hidden bs-lg:block w-56 mr-4 pl-3 py-1 border border-gray-800">
+        <input type="search" placeholder="Search routes, forums, etc" class="w-full text-sm placeholder-gray-400"
+          style="background: #000 url('/images/searchWhite.svg') 98% 50%/16px 16px no-repeat">
       </div>
       <div class="w-9 h-9 rounded-full overflow-hidden">
         <img src="/images/smith-rock-avatar.jpg" alt="">
       </div>
-      <div class="bs-lg:hidden ml-1">
+      <div class="bs-lg:hidden ml-5">
         <a href="#">
-          <img height="20" width="16" src="https://cdn.apstatic.com/img/hamburgerIconBlack.svg">
+          <img width="20" src="https://www.mountainproject.com/img/hamburgerIcon.svg">
         </a>
       </div>
     </div>
   </header>
   <section class="flex flex-wrap justify-between pt-5 bg-black">
-    <div class="flex-none w-full bs-lg:w-5/12 mb-5 px-4" style="height: 330px">
+    <div class="flex-none w-full bs-md:w-7/12 mb-5 px-4" style="height: 330px">
       <div class="relative">
         <div class="bg-cover bg-center overflow-hidden"
           style="height: 330px; background-image: url('/images/mtnproj-carousel-example2.jpg')">
@@ -82,181 +63,96 @@
         <div class="absolute left-3 bottom-1 font-light text-xs text-white">Climby McClimbface (10+)</div>
       </div>
     </div>
-    <div class="sm:w-1/2 bs-lg:w-1/4 bg-mp-900 text-white mb-5">
-      <div class="p-4 leading-tight">
-        <h2 class="font-condensed font-bold text-2xl leading-tight">Route Finder</h2>
-        <p class="mt-2 text-xs leading-tight">Tell us what you like, we'll tell you what to climb!</p>
+    <div class="flex flex-col w-full md:w-5/12 px-4 divide-y divide-mp-800 text-white mb-5">
+      <div class="text-center pb-5">
+        <h1 class="font-bold font-condensed text-4xl leading-tight">Beyond the Guidebook</h1>
+        <h3 class="font-bold font-condensed">218,428 Routes Shared by Climbers Like You</h3>
+      </div>
+      <div class="pt-5">
         <form action="POST" class="text-sm">
-          <table class="mt-2 leading-snug">
+          <table class="mt-2 mx-auto leading-snug">
             <colgroup>
               <col>
               <col>
             </colgroup>
             <tbody>
               <tr>
-                <td class="pr-1"><label>Location:</label></td>
-                <td class="pr-1"><span class="font-bold">All Locations</span> <a href="#"
-                    class="hover:underline">Change</a></td>
+                <td colspan="2" class="font-bold font-condensed text-xl leading-tight">Route Finder</td>
               </tr>
               <tr>
-                <td class="pt-2 pr-1"><label for="route-finder-quality">Quality:</label></td>
-                <td class="pt-2 pr-1">
+                <td colspan="2" class="pt-2 text-xs leading-tight">Tell us what you like, we'll tell you what to climb!
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-2 pr-1"><label>Type:</label></td>
+                <td class="pt-2">
+                  <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight" name="route-finder-type"
+                    id="route-finder-type">
+                    <option value="">Rock</option>
+                    <option value="1">Boulder</option>
+                  </select>
+                  <select class="ml-3 pl-1 pr-5 rounded-sm appearance-none text-black leading-tight"
+                    name="route-finder-min-grade" id="route-finder-min-grade">
+                    <option value="7">5.7</option>
+                    <option value="11">5.10b</option>
+                  </select>
+                  <span class="px-1">to</span>
+                  <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight"
+                    name="route-finder-max-grade" id="route-finder-max-grade">
+                    <option value="11">5.10b</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-2">&nbsp;</td>
+                <td class="pt-2">
+                  <input id="route-finder-trad-cb" name="route-finder-trad-cb" type="checkbox" checked>
+                  <label for="route-finder-trad-cb">Trad</label>
+                  <input id="route-finder-sport-cb" class="ml-4" name="route-finder-sport-cb" type="checkbox" checked>
+                  <label for="route-finder-sport-cb">Sport</label>
+                  <input id="route-finder-toprope-cb" class="ml-4" name="route-finder-toprope-cb" type="checkbox"
+                    checked>
+                  <label for="route-finder-toprope-cb">Toprope</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-2 pr-5">Filters:</td>
+                <td class="pt-2">
                   <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight"
                     name="route-finder-quality" id="route-finder-quality">
-                    <option value="">All routes</option>
+                    <option value="">All star ratings</option>
                     <option value="1">1+ of 4 stars</option>
                     <option value="2">1.5+ of 4 stars</option>
                     <option value="3">2+ of 4 stars</option>
                     <option value="4">2.5+ of 4 stars</option>
                     <option value="5">3+ of 4 stars</option>
                   </select>
-                </td>
-              </tr>
-              <tr>
-                <td class="pt-2 pr-1"><label for="route-finder-pitches">Pitches:</label></td>
-                <td class="pt-2 pr-1">
-                  <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight"
+                  <select class="ml-3 pl-1 pr-5 rounded-sm appearance-none text-black leading-tight"
                     name="route-finder-pitches" id="route-finder-pitches">
-                    <option value="">Any number</option>
+                    <option value="">Any pitches</option>
                   </select>
                 </td>
               </tr>
               <tr>
-                <td class="pt-2 pr-1"><label for="route-finder-type">Type:</label></td>
-                <td class="pt-2 pr-1">
-                  <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight" name="route-finder-type"
-                    id="route-finder-type">
-                    <option value="">Rock</option>
-                  </select>
+                <td class="pt-2 pr-1"><label>Location:</label></td>
+                <td class="pt-2 pr-1"><span class="font-bold">Smith Rock</span> <a href="#"
+                    class="hover:underline">Change</a></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="pt-5">
+                  <input class="px-3 py-1 bg-blue-700 font-condensed text-white" type="button" value="Find Routes">
                 </td>
               </tr>
             </tbody>
           </table>
-
-          <div class="mt-3">
-            <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight" name="route-finder-min-grade"
-              id="route-finder-min-grade">
-              <option value="7">5.7</option>
-            </select>
-            <span class="px-1">to</span>
-            <select class="pl-1 pr-5 rounded-sm appearance-none text-black leading-tight" name="route-finder-max-grade"
-              id="route-finder-max-grade">
-              <option value="11">5.10b</option>
-            </select>
-          </div>
-
-          <div class="mt-3">
-            <input id="route-finder-trad-cb" name="route-finder-trad-cb" type="checkbox" checked>
-            <label for="route-finder-trad-cb">Trad</label>
-            <input id="route-finder-sport-cb" class="ml-4" name="route-finder-sport-cb" type="checkbox" checked>
-            <label for="route-finder-sport-cb">Sport</label>
-            <input id="route-finder-toprope-cb" class="ml-4" name="route-finder-toprope-cb" type="checkbox" checked>
-            <label for="route-finder-toprope-cb">Toprope</label>
-          </div>
-
-          <div class="mt-3">
-            <input class="px-3 py-1 bg-blue-700 font-condensed text-white" type="button" value="Find Routes">
-          </div>
         </form>
       </div>
-    </div>
-    <div class="w-full h-full sm:w-1/2 bs-lg:w-1/3 p-4 text-white">
-      <div class="flex items-baseline">
-        <h2 class="font-bold font-condensed text-2xl">Forum Posts</h2>
-        <a href="#" class="ml-2 text-xs">More &raquo;</a>
-        <div class="flex-grow text-right">
-          <input type="checkbox" name="include-for-sale" id="include-for-sale" checked>
-          <label for="include-for-sale" class="text-xs">Include &quot;For Sale&quot; Posts</label>
-        </div>
-      </div>
-
-      <ul class="text-sm leading-snug">
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Climbing Am I The Asshole
-              (Hypothetical)</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">4 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Best brush for cleaning up
-              choss</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">12 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Guidebook Sale - All in MINT
-              Condition</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">12 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">New and Experienced Climbers Over
-              50</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">27 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">What is in your quiver of
-              ropes?</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">32 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">WTB : Draws</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">43 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">FS: Mad Rock Drone - $75/OBO</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">43 mins ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Tri-cams and hexes</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Small Harness and Women's 35.5/36 shoe
-              wanted</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Full rack for sale! 24 cams (including
-              mythical 3.5s, new slings, new carabiners) / stoppers/tric…</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">CO snow climbs ticklist</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Mt Erie first timer this weekend
-              5/9</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Wtb:hangboard</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-        <li class="flex items-baseline">
-          <span class="max-w-7/10 truncate"><a class="hover:underline" href="">Climbing Guidebook Found Southern
-              AZ</a></span>
-          <span class="flex-grow border-dashed border-b border-gray-700"></span>
-          <span class="text-xs">1 hour ago</span>
-        </li>
-      </ul>
     </div>
   </section>
   <section class="flex flex-wrap pt-6">
     <div class="flex flex-col w-full md:w-2/3 mb-10 pt-5 pl-4 pr-8 border-r border-mp-200">
-      <h2 class="pb-1 border-b-6 border-blue-800 font-condensed font-bold text-2xl leading-tight">Beyond the Guidebook:
-        The Definitive Climbing Resource</h2>
+      <h2 class="pb-1 border-b-6 border-blue-800 font-condensed font-bold text-2xl leading-tight">The Definitive
+        Climbing Resource</h2>
       <div class="flex flex-wrap justify-between pt-5">
         <div class="w-1/2 md:w-1/4 mb-8">
           <h3 class="font-condensed font-bold leading-tight">Your Favorite Areas</h3>
@@ -321,7 +217,8 @@
           </div>
         </div>
       </div>
-      <h3 class="pb-1 font-condensed font-bold leading-tight">Top 20 Classic Climbs</h3>
+      <h3 class="border-b-6 border-blue-800 pb-1 font-condensed font-bold text-2xl leading-tight">Top 20 Classic Climbs
+      </h3>
       <table class="w-full text-sm border-b border-mp-100">
         <tbody>
           <tr class="bg-mp-100">
@@ -920,39 +817,96 @@
       </div>
     </div>
     <div class="w-full md:w-1/3 mb-10 pt-5 pl-4 md:pl-8 pr-4">
-      <h2 class="pb-1 border-b-6 border-blue-800 font-condensed font-bold text-2xl leading-tight">Leading News</h2>
+      <div class="flex items-baseline border-b-6 border-blue-800">
+        <h2 class="font-bold font-condensed text-2xl">Forum Posts</h2>
+        <a href="#" class="ml-2 text-xs mp-link">More &raquo;</a>
+        <div class="flex-grow text-right">
+          <input type="checkbox" name="include-for-sale" id="include-for-sale" checked>
+          <label for="include-for-sale" class="text-xs">Include &quot;For Sale&quot;</label>
+        </div>
+      </div>
+
+      <ul class="mt-5 text-sm leading-snug">
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Climbing Am I The Asshole
+              (Hypothetical)</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">4 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Best
+              brush for cleaning up
+              choss</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">12 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Guidebook Sale - All in MINT
+              Condition</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">12 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">New and
+              Experienced Climbers Over
+              50</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">27 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">What is
+              in your quiver of
+              ropes?</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">32 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">WTB :
+              Draws</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">43 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">FS: Mad
+              Rock Drone - $75/OBO</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">43 mins
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Tri-cams and hexes</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">1 hour
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Small
+              Harness and Women's 35.5/36 shoe
+              wanted</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">1 hour
+              ago</a></span>
+        </li>
+        <li class="flex items-baseline">
+          <span class="max-w-7/10 truncate"><a class="mp-link" href="">Full
+              rack for sale! 24 cams (including
+              mythical 3.5s, new slings, new carabiners) / stoppers/tric…</a></span>
+          <span class="flex-grow border-dashed border-b border-gray-700"></span>
+          <span class="text-xs"><a href="#" class="mp-link">1 hour
+              ago</a></span>
+        </li>
+      </ul>
+
+      <h2 class="mt-6 pb-1 border-b-6 border-blue-800 font-condensed font-bold text-2xl leading-tight">Leading News</h2>
 
       <!-- News Cards -->
       <div class="flex flex-no-wrap md:flex-wrap justify-between overflow-x-scroll">
-        <div class="flex-none w-3/4 md:w-full pt-5 px-4 md:px-0 text-sm leading-tight">
-          <img class="h-6 mb-2" src="/images/coopJournal.svg" alt="">
-          <div class="p-3 bg-mp-100">
-            <div class="float-left w-16 h-12 mr-3 overflow-hidden">
-              <img class="object-cover object-left-top w-16 h-12" src="/images/coop-journal-photo.jpg" alt="">
-            </div>
-            <div>
-              <a class="mp-link" href="#">DIY: Make a Hangboard for Indoor
-                Climbing Workouts</a>
-              <div class="text-xs text-gray-700">Mar 30</div>
-            </div>
-            <hr class="my-2">
-            <div class="truncate">
-              <span class="inline-block w-12 text-xs text-gray-700">Mar 25</span>
-              <a class="mp-link" href="#">How to Take Your Next Conference
-                Call from Y...</a>
-            </div>
-            <div class="mt-1 truncate">
-              <span class="inline-block w-12 text-xs text-gray-700">Mar 9</span>
-              <a class="mp-link" href="#">How to Choose Headlamps</a>
-            </div>
-            <div class="mt-1 truncate">
-              <span class="inline-block w-12 text-xs text-gray-700">Feb 21</span>
-              <a class="mp-link" href="#">Kentucky's Elusive Ice Climbing Is
-                the Subject...</a>
-            </div>
-          </div>
-        </div>
-
         <div class="flex-none w-3/4 md:w-full pt-5 px-4 md:px-0 text-sm leading-tight">
           <img class="h-6 mb-2" src="/images/rockAndIce.png" alt="">
           <div class="p-3 bg-mp-100">
@@ -1047,7 +1001,6 @@
   <section class="px-4">
     <div class="border-b-6 border-blue-800">
       <h2 class="inline-block font-condensed font-bold text-2xl leading-tight">Rock Climbing Guide</h2>
-      <div class="hidden bs-sm:inline-block ml-1 text-sm">217,023 Routes Shared by Climbers Like You</div>
     </div>
     <!--
       NOTE: Fluid four-column layout that changes to two columns, then one column as screen size decreases.
