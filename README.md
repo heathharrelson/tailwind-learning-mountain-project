@@ -2,7 +2,15 @@
 
 [Mountain Project](https://www.mountainproject.com/) home page reimplemented using [Tailwind CSS](https://tailwindcss.com/) with light customization.
 
+## Screenshots
+
+My version implemented using Tailwind
+
 ![](screenshot.jpg)
+
+Original
+
+![](original-screenshot.jpg)
 
 ## Tooling
 
